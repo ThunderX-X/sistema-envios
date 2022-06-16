@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clients.Service", "Services\Client.Service\Clients.Service.csproj", "{63083CBA-5602-4FC3-BFBA-1DA4C270D375}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{63ABBE06-78CB-459B-94AE-80F9DE6DE1DF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		heroku.yml = heroku.yml
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Gateway", "Gateways\Api.Gateway\Api.Gateway.csproj", "{B6EEB8C0-481B-4FDB-95F8-3F897D4FEFBE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeliveryPoints.Service", "Services\DeliveryPoints.Service\DeliveryPoints.Service.csproj", "{A004FACC-CA61-459A-9455-3D61C4227B53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shipments.Service", "Services\Shipping.Service\Shipments.Service.csproj", "{2D4863EC-7926-4FD7-89B8-10A227A4A0EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63083CBA-5602-4FC3-BFBA-1DA4C270D375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63083CBA-5602-4FC3-BFBA-1DA4C270D375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63083CBA-5602-4FC3-BFBA-1DA4C270D375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63083CBA-5602-4FC3-BFBA-1DA4C270D375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EEB8C0-481B-4FDB-95F8-3F897D4FEFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EEB8C0-481B-4FDB-95F8-3F897D4FEFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EEB8C0-481B-4FDB-95F8-3F897D4FEFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EEB8C0-481B-4FDB-95F8-3F897D4FEFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A004FACC-CA61-459A-9455-3D61C4227B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A004FACC-CA61-459A-9455-3D61C4227B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A004FACC-CA61-459A-9455-3D61C4227B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A004FACC-CA61-459A-9455-3D61C4227B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4863EC-7926-4FD7-89B8-10A227A4A0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4863EC-7926-4FD7-89B8-10A227A4A0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4863EC-7926-4FD7-89B8-10A227A4A0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4863EC-7926-4FD7-89B8-10A227A4A0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AE60C70-9389-43C2-BBB3-92889C046CAF}
+	EndGlobalSection
+EndGlobal
