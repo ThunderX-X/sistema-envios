@@ -28,11 +28,8 @@ namespace Clients.Service
 
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
 
@@ -65,12 +62,12 @@ namespace Clients.Service
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy(name: "All",
-                                  policy =>
-                                  {
-                                      policy.AllowAnyOrigin();
-                                      policy.AllowAnyHeader();
-                                      policy.AllowAnyMethod();
-                                  });
+                                    policy =>
+                                    {
+                                        policy.AllowAnyOrigin();
+                                        policy.AllowAnyHeader();
+                                        policy.AllowAnyMethod();
+                                    });
             });
         }
 
