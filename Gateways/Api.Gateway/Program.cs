@@ -12,17 +12,25 @@ namespace Api.Gateway
 
             ConfigureCors(builder);
             builder.Services.AddOcelot();
+            builder.Services.AddSwaggerForOcelot(builder.Configuration);
+            builder.Services.AddEndpointsApiExplorer();
+
             var app = builder.Build();
 
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
 
-            app.MapControllers();
+            app.UseSwaggerForOcelotUI(opt =>
+            {
+                opt.PathToSwaggerGenerator = "/swagger/docs";
+            });
 
             app.UseCors("All");
 
             app.UseOcelot().Wait();
+
+            app.MapControllers();        
             
             app.Run();
             

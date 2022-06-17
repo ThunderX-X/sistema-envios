@@ -419,3 +419,6 @@ heroku.yml
 
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
+
+#Development configs
+*.[Dd]evelopment.*
